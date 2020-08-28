@@ -1,0 +1,23 @@
+{
+  "name": "11notetaker",
+  "version": "1.0.0",
+  "description": "Note taker app to be deployed on Heroku",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vmcgargill/11NoteTaker.git"
+  },
+  "keywords": [
+    "Note",
+    "Taker"
+  ],
+  "author": "Vincent J McGargill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vmcgargill/11NoteTaker/issues"
+  },
+  "homepage": "https://github.com/vmcgargill/11NoteTaker#readme"
+}
