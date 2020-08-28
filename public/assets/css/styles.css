@@ -1,7 +1,18 @@
+.navbar {
+  background-color: rgb(30, 30, 97);
+  font-size: 25px;
+}
+
+.navbar a {
+  color: white;
+
+}
+
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: silver;
 }
 
 .save-note {
