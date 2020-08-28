@@ -1,11 +1,33 @@
 .navbar {
   background-color: rgb(30, 30, 97);
-  font-size: 25px;
+  text-align: center;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0 0 15px 4px;
+  margin: 2%;
+  margin-top: 20px;
 }
 
-.navbar a {
-  color: white;
+.nav-item {
+  padding: 5px;
+  border-radius: 30px 30px 30px 30px;
+  transition-duration: 1s;
+}
 
+.nav-item:hover, .nav-item.active:hover {
+  background-color: rgb(85, 115, 248);
+  border-radius: 30px 30px 30px 30px;
+  color: white;
+}
+
+.nav-item:active, .nav-item.active {
+  background-color: rgb(0, 0, 71);
+  border-radius: 30px 30px 30px 30px;
+  color: white;
+}
+
+.container-fluid {
+  margin: 3%;
+  width: 97%;
 }
 
 html, body {
@@ -28,7 +50,7 @@ html, body {
 
 .note-textarea, .note-title {
   color: #000000;
-  width: 100%;
+  width: 97%;
   outline: none;
   border: none;
 }
@@ -40,9 +62,9 @@ html, body {
 }
 
 .note-title {
-  height: 50px;
-  margin-top: 13px;
+  height: 62px;
   font-size: 3rem;
+  border-bottom: #000000 solid;
 }
 
 .note-title:read-only, .note-textarea:read-only {
@@ -78,4 +100,17 @@ html, body {
   border-right: none;
   padding: 20px;
   cursor: pointer;
+}
+
+.footer {
+  background-color: rgb(30, 30, 97);
+  text-align: center;
+  padding: 5px;
+  border-radius: 50px 50px 50px 50px;
+  box-shadow: 0 0 15px 4px;
+  margin: 2%;
+}
+
+.footer p, a, a:hover {
+  color: white;
 }

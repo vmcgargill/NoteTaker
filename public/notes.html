@@ -13,9 +13,18 @@
 </head>
 
 <body>
-  <nav class="navbar">
-    <a class="navbar-brand" href="/">Vince's Note Taker
-    </a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand">
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/notes">Vince's Note Taker<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
     <div class="icons">
       <i class="fas fa-save text-light save-note"></i>
       <i class="fas fa-pen text-light new-note"></i>
@@ -35,8 +44,25 @@
       </div>
     </div>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="/assets/js/index.js"></script>
+  <!-- Footer -->
+  <div class="footer">
+    <p>
+      <a class="copyright">&copy; 2020 Vincent McGargill</a> 
+    </p>
+    <p>
+    Email: <a class="email" id="email" href="mailto:vincentmcgargill@gmail.com">vincentmcgargill@gmail.com</a>
+    </p>
+    <p>
+      <a href="https://github.com/vmcgargill" class="github" target="_blank">GitHub</a>
+    </p>
+    <p>
+      <a href="https://www.linkedin.com/in/vincent-mcgargill-b6244660/" class="linkedin" target="_blank">LinkedIn</a>
+    </p>
+    <p>
+      <a href="https://vmcgargill.github.io/portfolio/" class="portfolio" target="_blank">GitHub Portfolio</a>
+    </p>
+  </div>
 </body>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/assets/js/index.js"></script>
 </html>

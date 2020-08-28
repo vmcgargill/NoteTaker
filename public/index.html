@@ -11,19 +11,45 @@
 </head>
 
 <body>
-  <nav class="navbar">
-    <a class="navbar-brand" href="/">Vince's Note Taker
-    </a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand">
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/notes">Vince's Note Taker</a>
+        </li>
+      </ul>
+    </div>
   </nav>
   <div class="container">
-    <div style="margin-top: 80px;" class="jumbotron text-center">
-      <h1 class="display-4">Note Taker <span role="img" aria-label="Memo">📝</span></h1>
-      <h4 class="mt-4">Take notes with Express</h4>
+    <div style="margin-top: 80px; margin-bottom: 80px;" class="jumbotron text-center">
+      <h1 class="display-4">Vince's Note Taker <span role="img" aria-label="Memo">📝</span></h1>
+      <h4 class="mt-4">This app allows you to take notes using Express.</h4>
       <a class="btn btn-primary btn-lg mt-4" href="/notes" role="button">Get Started</a>
     </div>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="/assets/js/index.js"></script>
+  <!-- Footer -->
+  <div class="footer">
+    <p>
+      <a class="copyright">&copy; 2020 Vincent McGargill</a> 
+    </p>
+    <p>
+    Email: <a class="email" id="email" href="mailto:vincentmcgargill@gmail.com">vincentmcgargill@gmail.com</a>
+    </p>
+    <p>
+      <a href="https://github.com/vmcgargill" class="github" target="_blank">GitHub</a>
+    </p>
+    <p>
+      <a href="https://www.linkedin.com/in/vincent-mcgargill-b6244660/" class="linkedin" target="_blank">LinkedIn</a>
+    </p>
+    <p>
+      <a href="https://vmcgargill.github.io/portfolio/" class="portfolio" target="_blank">GitHub Portfolio</a>
+    </p>
+  </div>
 </body>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/assets/js/index.js"></script>
 </html>
