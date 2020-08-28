@@ -2,7 +2,7 @@
   "name": "11notetaker",
   "version": "1.0.0",
   "description": "Note taker app to be deployed on Heroku",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
