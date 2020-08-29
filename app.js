@@ -38,7 +38,7 @@ app.delete("/api/notes/:id", function(req, res) {
   let getSavedNotes = JSON.parse(fs.readFileSync(__dirname + "/db/db.json"));
   var DeleteNote = getSavedNotes.findIndex(note => note.id == req.params.id)
   getSavedNotes.splice(DeleteNote, 1);
-  getSavedNotes.forEach((note, i) => {note.id = i + 1});
+  // getSavedNotes.forEach((note, i) => {note.id = i + 1});
   fs.writeFileSync(__dirname + "/db/db.json", JSON.stringify(getSavedNotes));
   res.json(getSavedNotes);
 })

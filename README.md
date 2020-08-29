@@ -14,10 +14,10 @@ The app has 3 simple API calls that allow it to function on a server.
 The get notes API simply reads the db.json file and then displays that information on the page using JSON and Express. There is nothing more to it.
 
 #### Post Notes API
-The post notes API first gets the note information in the HTML inputs, and then it gets/reads the current database information in db.json file. Then, it pushes the new note information into the note array. After that, it assigns a unique id for each and every single note so that the app has a way of identifying, reading, and deleting the notes. Then, it overwrites the db.json file with all of it's new information, new notes, new ids, and the new array.
+The post notes API first gets the note information in the HTML inputs, and then it gets/reads the current database information in db.json file. Then, it pushes the new note information into the note array. After that, it assigns a unique id for each and every single note so that the app has a way of identifying, reading, and deleting the notes. This makes it so that the id matches the index plus 1. If any of the notes have an index of 0 then the app is unable to read that note. After all of this, it overwrites the db.json file with all of it's new information, new notes, new ids, and the new array.
 
 #### Delete Notes API
-The delete note API first reads the db.json file to see all of the current notes. Then it identifies which note that the user wishes to delete by filtering through the array using the findIndex method. After that, it splices the array which removes the identified note that the user whiches to delete. Then it reassigns all of the notes with new ids so that the user may easily add/remove more notes. This makes it so that the id matches the index plus 1. If any of the notes have an index of 0 then the app is unable to read that note.
+The delete note API first reads the db.json file to see all of the current notes. Then, it identifies which note that the user wishes to delete by filtering through the array using the findIndex method. After that, it splices the array which removes the identified note that the user whiches to delete.
 
 #### Get index.html & Get notes.html
 This app uses Express.js to identify the static path, which is currently the public path, as the path that contains all of the files that make up this web page. This app also uses JSON to read, write, and translate all of these JavaScript objects in a beautiful format that is user friendly and doplyable of Heroku.
@@ -54,7 +54,7 @@ node app.js
 
 Or you may test the app live on the Heroku page:
 https://vinces-note-taker.herokuapp.com/
-Be aware that others can see the notes you are taking. The are not saved locally, the are saved live on the Heroku cloud.
+Be aware that others can see the notes you are taking. The notes are not saved locally, they are saved live on the Heroku cloud.
  
 ## Questions 
 If you have any questions feel free to contact: 
