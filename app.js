@@ -28,6 +28,15 @@ app.post("/api/notes", function(req, res) {
   res.json(getSavedNotes);
 })
 
+app.delete("/api/notes/:id", function(req, res) {
+  let DeleteNote = req.body;
+  let getSavedNotes = JSON.parse(fs.readFileSync(__dirname + "/db/db.json"));
+  var id = getSavedNotes.indexOf(DeleteNote);
+  getSavedNotes.splice(id, 1);
+  fs.writeFileSync(__dirname + "/db/db.json", JSON.stringify(getSavedNotes));
+  res.json(getSavedNotes);
+})
+
 app.listen(PORT, function() {
   console.log("Server is listening on http://localhost:" + PORT);
 });
