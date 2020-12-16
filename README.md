@@ -1,4 +1,4 @@
-# 11NoteTaker
+# NoteTaker
 
 Link to the deployed Heroku app: https://vinces-note-taker.herokuapp.com/
 
